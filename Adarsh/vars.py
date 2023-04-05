@@ -9,20 +9,20 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', '19455849'))
-    API_HASH = str(getenv('API_HASH', '71498d69fad014add7e9f717bfde4b79'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN', '5451383761:AAGYe32Dv1Qe2NBvogzclNzCx-7Geup9pYc'))
-    name = str(getenv('name', 'bottest67bot'))
+    API_ID = int(getenv('API_ID', '14013342'))
+    API_HASH = str(getenv('API_HASH', 'c3e1d740fd207c7ae1b373a7546e8a62'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '5959006797:AAHvRyw4148dNY-4QxvlbyiGLi1Dl5VkZmU'))
+    name = str(getenv('name', 'Cinemica_streamer_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001620024364'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001900392886'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "905710386").split())  
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1128389435").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'sahid_malik'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'akshatsg'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
@@ -37,6 +37,6 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://savez:malik@cluster0.vsnui.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'))
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://akshatsg:OjjDQqOJmRbNEkj7@cluster0.r3gfyq9.mongodb.net/?retryWrites=true&w=majority'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
